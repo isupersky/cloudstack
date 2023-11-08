@@ -241,4 +241,7 @@ public class AutoScaleVmProfileResponse extends BaseResponse implements Controll
     public String getUserDataDetails() {
         return userDataDetails;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {}
 }

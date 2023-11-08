@@ -146,4 +146,9 @@ public class GlobalLoadBalancerResponse extends BaseResponse implements Controll
     public void setSiteLoadBalancers(List<LoadBalancerResponse> siteLoadBalancers) {
         this.siteLoadBalancers = siteLoadBalancers;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

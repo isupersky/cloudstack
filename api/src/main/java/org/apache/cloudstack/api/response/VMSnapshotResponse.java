@@ -272,4 +272,9 @@ public class VMSnapshotResponse extends BaseResponseWithTagInformation implement
     public void setHypervisor(String hypervisor) {
         this.hypervisor = hypervisor;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

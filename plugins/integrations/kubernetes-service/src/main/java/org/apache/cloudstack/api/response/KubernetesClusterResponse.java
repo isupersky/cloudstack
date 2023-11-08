@@ -398,4 +398,9 @@ public class KubernetesClusterResponse extends BaseResponseWithAnnotations imple
     public void setClusterType(KubernetesCluster.ClusterType clusterType) {
         this.clusterType = clusterType;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

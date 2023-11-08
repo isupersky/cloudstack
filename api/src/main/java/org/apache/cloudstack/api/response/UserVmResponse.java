@@ -1105,4 +1105,9 @@ public class UserVmResponse extends BaseResponseWithTagInformation implements Co
         }
         this.vnfDetails.put(key,value);
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

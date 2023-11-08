@@ -88,4 +88,8 @@ public class ServiceInstanceResponse extends BaseResponse implements ControlledE
         this.domainName = domainName;
     }
 
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

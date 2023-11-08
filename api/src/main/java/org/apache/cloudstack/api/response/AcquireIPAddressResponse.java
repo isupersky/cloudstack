@@ -283,4 +283,9 @@ public class AcquireIPAddressResponse  extends BaseResponse implements Controlle
  public void setForDisplay(Boolean forDisplay) {
      this.forDisplay = forDisplay;
  }
+
+ @Override
+ public void setDomainPath(String domainPath) {
+
+ }
 }

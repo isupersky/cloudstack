@@ -245,4 +245,8 @@ public class Site2SiteVpnConnectionResponse extends BaseResponse implements Cont
         this.forDisplay = forDisplay;
     }
 
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

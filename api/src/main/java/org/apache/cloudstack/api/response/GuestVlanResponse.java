@@ -153,4 +153,9 @@ public class GuestVlanResponse extends BaseResponse implements ControlledEntityR
     public void setNetworks(List<NetworkResponse> networks) {
         this.networks = networks;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

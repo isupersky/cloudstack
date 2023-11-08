@@ -316,4 +316,9 @@ public class IPAddressResponse extends BaseResponseWithAnnotations implements Co
     public void setHasRules(final boolean hasRules) {
         this.hasRules = hasRules;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

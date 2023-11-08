@@ -106,4 +106,8 @@ public class VmMetricsResponse extends UserVmResponse {
             this.diskIopsTotal = diskIoRead + diskIoWrite;
         }
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+    }
 }

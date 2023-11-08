@@ -92,4 +92,8 @@ public class ResourceCountResponse extends BaseResponse implements ControlledEnt
         this.projectName = projectName;
     }
 
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

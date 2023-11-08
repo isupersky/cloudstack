@@ -90,4 +90,9 @@ public class OvsProviderResponse extends BaseResponse implements
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

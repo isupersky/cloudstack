@@ -190,4 +190,9 @@ public class PrivateGatewayResponse extends BaseResponseWithAssociatedNetwork im
     public void setAclName(String aclName) {
         this.aclName = aclName;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

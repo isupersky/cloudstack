@@ -297,4 +297,9 @@ public class VpcResponse extends BaseResponseWithAnnotations implements Controll
     public void setIpv6Dns2(String ipv6Dns2) {
         this.ipv6Dns2 = ipv6Dns2;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

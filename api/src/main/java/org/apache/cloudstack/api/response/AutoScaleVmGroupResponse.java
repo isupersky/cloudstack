@@ -288,4 +288,7 @@ public class AutoScaleVmGroupResponse extends BaseResponseWithAnnotations implem
     public String getPrivatePort() {
         return privatePort;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {}
 }

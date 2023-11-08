@@ -96,4 +96,9 @@ public class VirtualRouterProviderResponse extends BaseResponse implements Contr
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

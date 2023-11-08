@@ -160,4 +160,7 @@ public class ApplicationLoadBalancerResponse extends BaseResponse implements Con
     public void setForDisplay(Boolean forDisplay) {
         this.forDisplay = forDisplay;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {}
 }

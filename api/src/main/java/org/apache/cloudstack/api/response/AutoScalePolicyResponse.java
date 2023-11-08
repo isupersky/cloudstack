@@ -127,4 +127,7 @@ public class AutoScalePolicyResponse extends BaseResponse implements ControlledE
     public void setProjectName(String projectName) {
         this.projectName = projectName;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {}
 }

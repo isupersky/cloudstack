@@ -199,4 +199,9 @@ public class LoadBalancerResponse extends BaseResponse implements ControlledEnti
     public void setForDisplay(Boolean forDisplay) {
         this.forDisplay = forDisplay;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

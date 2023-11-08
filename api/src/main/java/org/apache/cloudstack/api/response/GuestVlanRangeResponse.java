@@ -105,4 +105,8 @@ public class GuestVlanRangeResponse extends BaseResponse implements ControlledEn
         this.zoneId = zoneId;
     }
 
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

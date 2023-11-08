@@ -122,4 +122,9 @@ public class Site2SiteVpnGatewayResponse extends BaseResponse implements Control
     public void setForDisplay(Boolean forDisplay) {
         this.forDisplay = forDisplay;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

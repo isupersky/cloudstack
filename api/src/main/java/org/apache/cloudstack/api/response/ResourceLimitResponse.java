@@ -94,4 +94,9 @@ public class ResourceLimitResponse extends BaseResponse implements ControlledEnt
     public void setProjectId(String projectId) {
         this.projectId = projectId;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

@@ -138,4 +138,9 @@ public class ConditionResponse extends BaseResponse implements ControlledEntityR
     public void setDomainName(String domainName) {
         this.domain = domainName;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

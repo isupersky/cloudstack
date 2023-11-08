@@ -193,4 +193,8 @@ public class Site2SiteCustomerGatewayResponse extends BaseResponseWithAnnotation
         this.domain = domainName;
     }
 
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

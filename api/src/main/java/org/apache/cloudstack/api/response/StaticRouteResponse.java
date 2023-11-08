@@ -127,4 +127,9 @@ public class StaticRouteResponse extends BaseResponse implements ControlledEntit
     public void setTags(List<ResourceTagResponse> tags) {
         this.tags = tags;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

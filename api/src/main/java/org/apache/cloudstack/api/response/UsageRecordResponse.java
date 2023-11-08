@@ -307,4 +307,9 @@ public class UsageRecordResponse extends BaseResponseWithTagInformation implemen
     public void setVpcId(String vpcId) {
         this.vpcId = vpcId;
     }
+
+    @Override
+    public void setDomainPath(String domainPath) {
+
+    }
 }

@@ -101,4 +101,8 @@ public class VpnUsersResponse extends BaseResponse implements ControlledEntityRe
         this.state = state;
     }
 
+    @Override
+    public void setDomainPath(String domainPath) {
+    }
+
 }
