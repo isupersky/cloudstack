@@ -2574,9 +2574,11 @@ public class ApiResponseHelper implements ResponseGenerator {
         }
         response.setServices(serviceResponses);
 
+        StringBuilder domainPath = new StringBuilder();
         if (network.getAclType() == null || network.getAclType() == ACLType.Account) {
             populateOwner(response, network);
-        } else {
+        }
+        else {
             // get domain from network_domain table
             Pair<Long, Boolean> domainNetworkDetails = ApiDBUtils.getDomainNetworkDetails(network.getId());
             if (domainNetworkDetails.first() != null) {
@@ -2584,13 +2586,14 @@ public class ApiResponseHelper implements ResponseGenerator {
                 if (domain != null) {
                     response.setDomainId(domain.getUuid());
 
-                    StringBuilder domainPath = new StringBuilder("ROOT");
+                    domainPath = new StringBuilder("ROOT");
                     (domainPath.append(domain.getPath())).deleteCharAt(domainPath.length() - 1);
-                    response.setDomainPath(domainPath.toString());
+
                 }
             }
             response.setSubdomainAccess(domainNetworkDetails.second());
         }
+        response.setDomainPath(domainPath.toString());
 
         Long dedicatedDomainId = ApiDBUtils.getDedicatedNetworkDomain(network.getId());
         if (dedicatedDomainId != null) {
