@@ -2584,15 +2584,15 @@ public class ApiResponseHelper implements ResponseGenerator {
                 if (domain != null) {
                     response.setDomainId(domain.getUuid());
                     StringBuilder domainPath = new StringBuilder();
-                    s_logger.debug("domainPath before if: " + domainPath);
-                    s_logger.debug("domain.Path before if: " + domain.getPath());
+                    s_logger.info("domainPath before if: " + domainPath);
+                    s_logger.info("domain.Path before if: " + domain.getPath());
                     if(ObjectUtils.isEmpty(domain.getPath())){
                         domainPath.append("/");
-                        s_logger.debug("domainPath in if: " + domainPath);
+                        s_logger.info("domainPath in if: " + domainPath);
                     }
                     else{
                         (domainPath.append(domain.getPath())).deleteCharAt(domainPath.length() - 1);
-                        s_logger.debug("domainPath in else: " + domainPath);
+                        s_logger.info("domainPath in else: " + domainPath);
                     }
                     response.setDomainPath(domainPath.toString());
                 }
@@ -2607,15 +2607,15 @@ public class ApiResponseHelper implements ResponseGenerator {
                 response.setDomainId(domain.getUuid());
                 response.setDomainName(domain.getName());
                 StringBuilder domainPath = new StringBuilder();
-                s_logger.debug("domainPath before if: " + domainPath);
-                s_logger.debug("domain.Path before if: " + domain.getPath());
+                s_logger.info("domainPath before if: " + domainPath);
+                s_logger.info("domain.Path before if: " + domain.getPath());
                 if(ObjectUtils.isEmpty(domain.getPath())){
                     domainPath.append("/");
-                    s_logger.debug("domainPath in if: " + domainPath);
+                    s_logger.info("domainPath in if: " + domainPath);
                 }
                 else{
                     (domainPath.append(domain.getPath())).deleteCharAt(domainPath.length() - 1);
-                    s_logger.debug("domainPath in else: " + domainPath);
+                    s_logger.info("domainPath in else: " + domainPath);
                 }
                 response.setDomainPath(domainPath.toString());
             }
@@ -2867,15 +2867,15 @@ public class ApiResponseHelper implements ResponseGenerator {
         response.setDomainId(domain.getUuid());
         response.setDomainName(domain.getName());
         StringBuilder domainPath = new StringBuilder();
-        s_logger.debug("domainPath before if: " + domainPath);
-        s_logger.debug("domain.Path before if: " + domain.getPath());
+        s_logger.info("domainPath before if: " + domainPath);
+        s_logger.info("domain.Path before if: " + domain.getPath());
         if(ObjectUtils.isEmpty(domain.getPath())){
             domainPath.append("/");
-            s_logger.debug("domainPath in if: " + domainPath);
+            s_logger.info("domainPath in if: " + domainPath);
         }
         else{
             (domainPath.append(domain.getPath())).deleteCharAt(domainPath.length() - 1);
-            s_logger.debug("domainPath in else: " + domainPath);
+            s_logger.info("domainPath in else: " + domainPath);
         }
         response.setDomainPath(domainPath.toString());
     }
