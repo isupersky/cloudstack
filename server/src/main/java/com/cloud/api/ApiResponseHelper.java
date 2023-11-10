@@ -2869,7 +2869,7 @@ public class ApiResponseHelper implements ResponseGenerator {
         StringBuilder domainPath = new StringBuilder();
         s_logger.info("domainPath before if: " + domainPath);
         s_logger.info("domain.Path before if: " + domain.getPath());
-        if(ObjectUtils.isEmpty(domain.getPath())){
+        if(ObjectUtils.isEmpty(domain.getPath().trim())){
             domainPath.append("/");
             s_logger.info("domainPath in if: " + domainPath);
         }
